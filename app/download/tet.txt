@@ -1,6 +1,0 @@
-python3 test.py Jpselect.csv 7203.T,2914.T 2023-01-01 2023-01-31
-
-
-
-
-python3 test.py Jpselect.csv 7203.T,9432.T 2023 01 01 2023 01 31
