@@ -15,6 +15,10 @@ ticker=[
         ['MC.PA','OR.PA','RMS.PA','TTE.PA','SAN.PA','AIR.PA','EL.PA','SU.PA','AI.PA','KER.PA','BNP.PA','CS.PA','DG.PA','SAF.PA','RI.PA','DSY.PA','STLA.PA','ENGI.PA','STM.PA','BN.PA','CAP.PA','ACA.PA','HO.PA','ORA.PA','SGO.PA','LR.PA','ML.PA','GLE.PA','VIE.PA','PUB.PA'] 
         ]
 
+@app.route('/a')
+def wjid():
+    return "wedwedwdehdwd"
+
 @app.route('/submit',methods = ['GET','POST'])
 def submit():
     Index = request.form['select_menu']
