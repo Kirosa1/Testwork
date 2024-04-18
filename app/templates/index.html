@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='dist/assets/favicon.ico') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='dist/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Lab 114</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Welcome</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">資料をください.</h2>
+                        <form action="/submit" method="post">
+                            <!-- 文本输入框 -->
+                            <label for="select_menu">Select Menu:</label>
+                            <select id="select_menu" name="select_menu">
+                                <option value="TSX">TSX</option>
+                                <option value="DJIA">DJIA</option>
+                                <option value="FTSE">FTSE</option>
+                                <option value="DAX">DAX</option>
+                                <option value="MIB">MIB</option>
+                                <option value="CAC">CAC</option>
+                                <option value="NIKKEI">NIKKEI</option>
+                            </select><br><br>
+                            <!-- 日期选择框 -->
+                            <label for="date_input1">Begin:</label>
+                            <input type="date" id="date_input1" name="date_input1"><br><br>
+                            <label for="date_input2">End:</label>
+                            <input type="date" id="date_input2" name="date_input2"><br><br>
+                            
+                            <!-- 提交按钮 -->
+                            <input type="submit" value="Submit">
+                        
+                            <!--a class="btn btn-primary"><input type="submit" Value="Download"></a-->
+                        <!--a class="btn btn-primary" href="/app/downloads/tet.txt">Download</a-->
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </header>   
+    </body>
+</html>
